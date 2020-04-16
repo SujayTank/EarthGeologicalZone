@@ -30,6 +30,7 @@ class ContactFormMail extends Mailable
      */
     public function build()
     {
-        return $this->markdown('emails.contactForm.contact-form');
+        // return $this->markdown('emails.contactForm.contact-form');
+        return $this->subject("Mail from Earth Geological Zone")->view('emails.contactForm.contact-form');
     }
 }

@@ -26,10 +26,10 @@
               <div class="col-md-6">
                 <div class="md-form mb-0">
                   <input type="text" id="contact-name" class="form-control" name="name" value="{{ old('name') }}">
-                  <label for="contact-name" class="">Your name</label>
+                  <label for="contact-name" class="">Your name <span class="text-danger">*</span></label>
                 </div>
-                
-                <div>{{ $errors -> first('name') }}</div>
+
+                <div class="text-danger">{{ $errors -> first('name') }}</div>
               </div>
               <!-- Grid column -->
 
@@ -37,9 +37,9 @@
               <div class="col-md-6">
                 <div class="md-form mb-0">
                   <input type="text" id="contact-email" class="form-control" name="email" value="{{ old('email') }}">
-                  <label for="contact-email" class="">Your email</label>
+                  <label for="contact-email" class="">Your email <span class="text-danger">*</span></label>
                 </div>
-                <div>{{ $errors -> first('email') }}</div>
+                <div class="text-danger">{{ $errors -> first('email') }}</div>
               </div>
               <!-- Grid column -->
 
@@ -53,9 +53,9 @@
               <div class="col-md-12">
                 <div class="md-form mb-0">
                   <input type="text" id="contact-Subject" class="form-control" name="subject" value="{{ old('subject') }}">
-                  <label for="contact-Subject" class="">Subject</label>
+                  <label for="contact-Subject" class="">Subject <span class="text-danger">*</span></label>
                 </div>
-                <div>{{ $errors -> first('subject') }}</div>
+                <div class="text-danger">{{ $errors -> first('subject') }}</div>
               </div>
               <!-- Grid column -->
 
@@ -69,9 +69,9 @@
               <div class="col-md-12">
                 <div class="md-form">
                   <textarea id="contact-message" class="form-control md-textarea" rows="3" name="message" value="{{ old('message') }}"></textarea>
-                  <label for="contact-message">Your message</label>
+                  <label for="contact-message">Your message <span class="text-danger">*</span></label>
                 </div>
-                <div>{{ $errors -> first('message') }}</div>
+                <div class="text-danger">{{ $errors -> first('message') }}</div>
               </div>
               <!-- Grid column -->
 
@@ -80,9 +80,9 @@
 
             @csrf
 
-            <button type="submit" class="text-center text-md-center btn blue-gradient">
-              Send Message
-            </button>
+            <div class="text-center">
+                <button type="submit" class="btn blue-gradient">Send Message</button>
+              </div>
 
           </form>
 

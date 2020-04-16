@@ -34,11 +34,6 @@
                   free tutorial
                   <i class="fas fa-graduation-cap ml-2"></i>
                 </a> -->
-                @if (session()->has('message'))
-                    <div class="alert alert-success" role="alert">
-                        <strong>Successful.</strong> {{session()->get('message')}}
-                    </div>
-                @endif
 
               </div>
               <!-- Content -->
