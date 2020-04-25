@@ -3,21 +3,14 @@
 <body>
 
     <!-- Preloader -->
-    <!--Big blue-->
-    <div class="preloader-wrapper big active crazy">
-        <div class="spinner-layer spinner-blue-only">
-        <div class="circle-clipper left">
-            <div class="circle"></div>
-        </div>
-        <div class="gap-patch">
-            <div class="circle"></div>
-        </div>
-        <div class="circle-clipper right">
-            <div class="circle"></div>
-        </div>
+
+    <div class="loader_bg">
+        <div class="loader">
         </div>
     </div>
+
   <!-- Preloader -->
+
   <!-- Navbar -->
   @include('layouts.nav')
   <!-- Navbar -->
@@ -42,6 +35,12 @@
 
   <!-- SCRIPTS -->
   @include('layouts.scripts')
+    <script>
+        setTimeout(function(){
+        $('.loader_bg').fadeToggle();
+        },4000);
+    </script>
+
 </body>
 
 </html>
