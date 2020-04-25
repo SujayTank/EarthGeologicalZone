@@ -2,7 +2,12 @@
 html,
 body,
 .view {
-  height: 95%; }
+  height: 95%;
+}
+
+.logo{
+    width: 55%;
+ }
 
 /* Full Page Carousel itself*/
 .carousel {

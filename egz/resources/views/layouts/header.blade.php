@@ -6,5 +6,5 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title> @yield('title','Earth Geological Zone') </title>
-  <link rel="icon" href="{{ asset('/data/img/favicon.png') }}">  @include('layouts.styles')
+  <link rel="icon" href="{{ asset('/data/img/title.png') }}">  @include('layouts.styles')
 </head>

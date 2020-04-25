@@ -21,8 +21,13 @@
               <!-- Content -->
               <div class="text-center white-text mx-5 wow fadeIn">
             <h1 class="mb-4 fadeOutDownBig" style="font-family: Prosto One ">
+                <br>
+
               <strong>Earth Geological Zone</strong>
-              </h1>
+              {{-- <a class="navbar-brand" href="/">
+                <img style="width:60%" src=" {{ asset('/data/img/logoBW.png') }} ">
+            </a> --}}
+            </h1>
 
               <h4>
               <p class="mb-4 d-md-block animated fadeInDown">
@@ -34,6 +39,11 @@
                   free tutorial
                   <i class="fas fa-graduation-cap ml-2"></i>
                 </a> -->
+                @if (session()->has('message'))
+                    <div class="alert alert-success" role="alert">
+                        <strong>Successful.</strong> {{session()->get('message')}}
+                    </div>
+                @endif
 
               </div>
               <!-- Content -->
@@ -55,6 +65,8 @@
               <!-- Content -->
               <div class="text-center white-text mx-5 wow fadeIn">
                 <h1 class="mb-4 fadeOutDownBig" style="font-family: Prosto One ">
+                    <br>
+
                   <strong>Earth Geological Zone</strong>
               </h1>
 
@@ -93,8 +105,9 @@
               <!-- Content -->
               <div class="text-center white-text mx-5 wow fadeIn">
             <h1 class="mb-4 fadeOutDownBig" style="font-family: Prosto One ">
+                <br>
                 <strong>Earth Geological Zone</strong>
-              </h1>
+            </h1>
 
               <h4>
               <p class="mb-4 d-md-block animated fadeInDown">

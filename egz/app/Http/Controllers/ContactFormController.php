@@ -21,11 +21,13 @@ class ContactFormController extends Controller
             'message'  =>  'required',
         ]);
 
-        // Mail::to('earthgeologicalzone@gmail.com')->send(new ContactFormMail($data));
+        // Mail::to('sujaytank@gmail.com')->send(new ContactFormMail($data));
         // return redirect('contact')->with('message','Thank you, We\'ll be in touch.');
 
         Mail::to('sujaytank16595@gmail.com')->send(new ContactFormMail($data));
         return redirect('contact')->with('message','Thank you for your message.');
+
+
         // return view('emails.contactForm.thankyou')->with('message','Thank you for your message.');
 
        // dd(request() -> all());
