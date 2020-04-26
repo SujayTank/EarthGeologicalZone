@@ -38,7 +38,7 @@
     <script>
         setTimeout(function(){
         $('.loader_bg').fadeToggle();
-        },4000);
+        },2000);
     </script>
 
 </body>

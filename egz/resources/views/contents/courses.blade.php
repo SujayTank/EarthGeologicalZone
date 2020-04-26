@@ -69,7 +69,7 @@
         </div> -->
 
         <!-- Hoverable -->
-        <img src=" {{ asset('/data/img/book1.png') }} " class="img-fluid rounded-circle hoverable" alt="hoverable" 
+        <img src=" {{ asset('/data/img/c-logo.png') }} " class="img-fluid rounded-circle hoverable" alt="hoverable"
         style="width:80%">
 
   </div>

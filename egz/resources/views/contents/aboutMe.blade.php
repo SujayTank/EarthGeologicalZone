@@ -4,14 +4,16 @@
 <!--Modal: Login with Avatar Form-->
 <div class="modal fade" id="modalCart" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
   aria-hidden="true">
-  
+
   <div class="modal-dialog cascading-modal modal-avatar" role="document">
     <div class="modal-content">
       <!--Header-->
       <div class="modal-header">
         <img src=" {{ asset('/data/img/pic.jpeg') }} " alt="avatar" class="rounded-circle img-responsive">
       </div>
+
       <!--Body-->
+
       <div class="modal-body">
       <h4 class="mt-1 mb-2"><b>Mr. Kartik P. Tiwari<b></h4>
         <h6>B.Sc.(PCH,CHE,GOG), M.Sc.(Geology)</h6>
@@ -22,8 +24,12 @@
       </div>
       <!--Footer-->
       <div class="modal-footer">
-      <!-- <button type="button" class="btn btn-light">Close</button> -->
-      <!-- <button class="btn btn-primary">Checkout</button> -->
+
+     <button type="button" class="btn btn-light waves-effect" data-dismiss="modal">Close</button>
+
+     {{-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true" class="red-text">&times;</span>
+    </button> --}}
       </div>
     </div>
   </div>

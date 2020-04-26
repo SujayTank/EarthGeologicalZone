@@ -1,4 +1,9 @@
  <!-- Navbar -->
+ <style>
+     .logo{
+    width: 40%;
+ }
+ </style>
  <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
     <div class="container">
 
